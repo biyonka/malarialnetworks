@@ -1,9 +1,10 @@
 # Community Detection on Malarial Transmission Networks
 
-**The goal of this project is to develop a geographically-constrained community detection algorithm for directed networks, and simulate its feasibility as a tool for increasing the mosquito mortality of targeted intervention methods.**
+The goal of this project is to develop a geographically-constrained community detection algorithm for directed networks, and simulate its feasibility as a tool for increasing the mosquito mortality of targeted intervention methods.
 
 ## News
-(June 2018) Preliminary results were presented at the 2018 Netsci: International School and Conference on Network Science. 
+**June 2018**: Preliminary results were presented at the 2018 Netsci: International School and Conference on Network Science.
+ 
 Our poster, titled *"Network Analysis of Mosquito Habitats for Controlling Vector-Borne Pathogens"*, can be found here:  https://www.netsci2018.com/posters
 
 ## Background
