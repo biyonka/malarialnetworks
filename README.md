@@ -6,10 +6,12 @@ Mosquitoes do not move homogeneously over their habitat because they must move t
 
 In the context of the targeted intervention of mosquitos, both topographical and map-framework clustering algorithms have major limitations. **The goal of this project is to develop a geographic, flow-adjusted community detection algorithm, and simulate its feasibility as a tool for increasing the mosquito mortality of targeted intervention methods.**
 
-This project is part of an ongoing effort between Marshall Labs at UC Berkeley and the Institute for Health Metrics and Evaluation (IHME) at the University of Washington to model and analyze the spatial dynamics of malarial transmission.
+This project is part of an ongoing effort between [Marshall Lab](https://www.marshalllab.com) at UC Berkeley and the [Institute for Health Metrics and Evaluation(IHME)](http://www.healthdata.org) at UW Medicine to model and analyze the spatial dynamics of malarial transmission.
 
 More information about these efforts can be found here: 
+
 https://chipdelmal.github.io/MoNeT/
+
 https://marshalllab.github.io/MGDrivE/
 
 We presented some preliminary results at the 2018 Netsci: International School and Conference on Network Science. 
