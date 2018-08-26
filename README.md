@@ -1,6 +1,10 @@
 # Community Detection on Malarial Transmission Networks
 
-![alt text][ArtificialLandscapes/data/Maps/R030_P050_C003_D010_INet.jpg]
+<!-- ![alt text][ArtificialLandscapes/data/Maps/R030_P050_C003_D010_INet.jpg] -->
+
+<img src="ArtificialLandscapes/data/Maps/R030_P050_C003_D010_INet.jpg"
+     alt="image_test"
+     style="float: center; margin-right: 10px;" />
 
 The goal of this project is to develop a geographically-constrained community detection algorithm for directed networks, and simulate its feasibility as a tool for increasing the mosquito mortality of targeted intervention methods.
 
