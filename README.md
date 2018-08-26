@@ -5,8 +5,7 @@
 <img align="left" 
 src="ArtificialLandscapes/data/Maps/R030_P050_C003_D010_INet.jpg"
      alt="Artificial-landscape"
-     width = "450"
-    style = "margin-bottom:1000px; margin-right:10000px;" >
+     width = "600" >
 
 The goal of this project is to develop a geographically-constrained community detection algorithm for directed networks, and simulate its feasibility as a tool for increasing the mosquito mortality of targeted intervention methods.
 
@@ -50,7 +49,7 @@ Optimizing over all possible clusters is an combinatorial optimization problem. 
 Example: 
 
 ```
-python clusteringScript.py --g houses.net -c coordinates.csv --steps 100
+python clusteringScript.py --g houses.net -c coordinates.csv --steps 10000
 ```
 
 
