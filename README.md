@@ -21,7 +21,7 @@ Mosquitoes do not move homogeneously over their habitat because they must move t
 
 ## Usage
 
-This package is still in development. In particular, I working to define benchmarks for which to evaluate its effectiveness and to develop realistic pointsets representing mosquito movement and ecology.
+This package is still in development. In particular, I working to define benchmarks for which to evaluate its effectiveness and to develop realistic pointsets representing mosquito movement and ecology. 
 
 Currently, it takes in a networkX .net file, a file of (X, Y) coordinates, and outputs a .csv mapping each site in the coordinate file to a cluster that minimizes the entropy of the system within some geographic limits. 
 
@@ -29,31 +29,30 @@ To use the script, run the command:
 
 ```
 python clusteringScript.py --graph-filename <path_to_.net_graph> --coordinates <path_to_csv_of_landscape> 
-
 ```
 
-Example: 
+*Example:* 
 
 ```
 python clusteringScript.py --graph-filename houses.net --coordinates coordinates.csv 
 ```
  
- or 
+*or* 
 
 ```
 python clusteringScript.py --g houses.net --c coordinates.csv 
 ```
  
-Optimizing over all possible clusters is an combinatorial optimization problem. Because of the large search space, an exhaustive search is NP-hard. Therefore, I am using simulated annealing, a stochastic optimization algorithm, to select the clusters. The algorithm has been shown to [converge to the global optimum with high probability given a large enough number of trials](https://www.cambridge.org/core/journals/advances-in-applied-probability/article/convergence-and-finitetime-behavior-of-simulated-annealing/E71F662ACA634FE249EF6AD542B93739). Therefore, specifying a suitable number of steps for which to run the optimization is vital to ensure convergence.
+Optimizing over all possible clusters is an combinatorial optimization problem. Because of the large search space, an exhaustive search is NP-hard. Therefore, I am using simulated annealing, a stochastic optimization algorithm, to select the clusters, with an initial state of each cluster consisting of a single node. Simulated Annealing has been shown to [converge to the global optimum with high probability given a large enough number of trials](https://www.cambridge.org/core/journals/advances-in-applied-probability/article/convergence-and-finitetime-behavior-of-simulated-annealing/E71F662ACA634FE249EF6AD542B93739). Therefore, specifying a suitable number of steps for which to run the optimization is vital to ensure convergence.
 
-Example: 
+*Example:*
 
 ```
 python clusteringScript.py --g houses.net -c coordinates.csv --steps 10000
 ```
 
+I plan to add additional functionality to allow the user to specify a clustering for the initial state, which will hopefully improve convergence time. 
 
-I plan to add additional functionality, such as 
 ## Affiliation
 
 This project is part of an ongoing effort between [Marshall Lab](https://www.marshalllab.com) at UC Berkeley and the [Institute for Health Metrics and Evaluation(IHME)](http://www.healthdata.org) at UW Medicine to model and analyze the spatial dynamics of malarial transmission.
