@@ -1,7 +1,7 @@
 # Community Detection on Malarial Transmission Networks
 
 <!-- ![alt text][ArtificialLandscapes/data/Maps/R030_P050_C003_D010_INet.jpg] -->
-<p align="center">
+<p float="left">
 <img src="ArtificialLandscapes/data/Maps/R030_P050_C003_D010_INet.jpg"
      alt="Artificial-landscape"
      width = "400" 
