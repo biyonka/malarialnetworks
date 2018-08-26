@@ -44,6 +44,7 @@ def load_and_process_graph(filename):
     """Load the graph, normalize edge weights, compute pagerank, and store all
     this back in node data."""
     # Load the graph
+ 
     graph = nx.DiGraph(nx.read_pajek(filename))
     print ("Loaded a graph (%d nodes, %d edges)" % (len(graph),
             len(graph.edges())))
@@ -214,7 +215,7 @@ def main(argv):
         i += 1
     cluster = cluster.flatten()[1:]
     coords['cluster'] = cluster
-    output = options.graph_filename.name.split('/')[1]
+    output = options.graph_filename.name.split('/')[-1]
     coords.to_csv('ArtificialLandscapes/ClusterOutput/' + output[:-4] + '_clustering.csv')
 
 if __name__ == "__main__":
