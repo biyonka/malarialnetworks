@@ -22,17 +22,21 @@ Currently, it takes in a networkX .net file, a file of (X, Y) coordinates, and o
 
 To use the script, run the command:
 
-```python clusteringScript.py --graph-filename <path_to_.net_graph> --coordinates <path_to_csv_of_landscape> 
+```
+python clusteringScript.py --graph-filename <path_to_.net_graph> --coordinates <path_to_csv_of_landscape> 
+
 ```
 
 Example: 
 
-```python clusteringScript.py --graph-filename houses.net --coordinates coordinates.csv 
+```
+python clusteringScript.py --graph-filename houses.net --coordinates coordinates.csv 
 ```
  
  or 
 
-```python clusteringScript.py --g houses.net --c coordinates.csv 
+```
+python clusteringScript.py --g houses.net --c coordinates.csv 
 ```
  
 Optimizing over all possible clusters is an combinatorial optimization problem. Because of the large search space, an exhaustive search is NP-hard. Therefore, I am using simulated annealing, a stochastic optimization algorithm, to select the clusters. The algorithm has been shown to [converge to the global optimum with high probability given a large enough number of trials](https://www.cambridge.org/core/journals/advances-in-applied-probability/article/convergence-and-finitetime-behavior-of-simulated-annealing/E71F662ACA634FE249EF6AD542B93739). Therefore, specifying a suitable number of steps for which to run the optimization is vital to ensure convergence.

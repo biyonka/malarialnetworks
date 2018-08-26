@@ -170,8 +170,8 @@ def main(argv):
         help="the .coordinate file to use as the graph", required=True)
     parser.add_argument('-s', '--steps', default="10000",
         help="number of steps to use for the simulated annealing optimization")
-    parser.add_argument('-m', '--module-filename', default="2009_figure3a.mod",
-            help="the .mod file to use as the clustering")
+    # parser.add_argument('-m', '--module-filename', default="2009_figure3a.mod",
+    #         help="the .mod file to use as the clustering")
     options = parser.parse_args(argv[1:])
 
     graph = load_and_process_graph(options.graph_filename.name)
