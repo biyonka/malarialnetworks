@@ -6,8 +6,7 @@
 src="ArtificialLandscapes/data/Maps/R030_P050_C003_D010_INet.jpg"
      alt="Artificial-landscape"
      width = "450"
-    margin-bottom = '100'
-    margin-right = '150' >
+    style = "margin-bottom:100px; margin-right:150px;" >
 
 The goal of this project is to develop a geographically-constrained community detection algorithm for directed networks, and simulate its feasibility as a tool for increasing the mosquito mortality of targeted intervention methods.
 
