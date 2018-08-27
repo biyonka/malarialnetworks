@@ -7,7 +7,7 @@ src="ArtificialLandscapes/data/Maps/R030_P050_C003_D010_INet.jpg"
      alt="Artificial-landscape"
      width = "200">
 
-The goal of this project is to develop a geographically-constrained community detection algorithm for directed networks, and simulate its feasibility as a tool for increasing the mosquito mortality of targeted intervention methods.
+The goal of this project is to develop a geographically-constrained community detection algorithm for directed networks, and simulate its feasibility as a tool for increasing mosquito mortality in targeted intervention methods.
 
 ## News
 
@@ -23,7 +23,7 @@ Mosquitoes do not move homogeneously over their habitat because they must move t
 
 This package is still in development. In particular, I working to define benchmarks for which to evaluate its effectiveness and to develop realistic pointsets representing mosquito movement and ecology. 
 
-Currently, it takes in a networkX .net file, a file of (X, Y) coordinates, and outputs a .csv mapping each site in the coordinate file to a cluster that minimizes the entropy of the system within some geographic limits. 
+Currently, it takes in a networkX .net file, a ,csv file of (X, Y) coordinates, and outputs a .csv mapping each site in the coordinate file to a cluster that minimizes the entropy of the system within some geographic limits. 
 
 To use the script, run the command:
 
@@ -43,7 +43,7 @@ python clusteringScript.py --graph-filename houses.net --coordinates coordinates
 python clusteringScript.py --g houses.net --c coordinates.csv 
 ```
  
-Optimizing over all possible clusters is an combinatorial optimization problem. Because of the large search space, an exhaustive search is NP-hard. Therefore, I am using simulated annealing, a stochastic optimization algorithm, to select the clusters, with an initial state of each cluster consisting of a single node. Simulated Annealing has been shown to [converge to the global optimum with high probability given a large enough number of trials](https://www.cambridge.org/core/journals/advances-in-applied-probability/article/convergence-and-finitetime-behavior-of-simulated-annealing/E71F662ACA634FE249EF6AD542B93739). Therefore, specifying a suitable number of steps for which to run the optimization is vital to ensure convergence.
+Optimizing over all possible clusters is an combinatorial optimization problem. Because of the large search space, an exhaustive search is NP-hard. Therefore, I am using Simulated Annealing, a stochastic optimization algorithm, to select the clusters, with the initial state of each cluster consisting of a single node. Simulated Annealing has been shown to [converge to the global optimum with high probability given a large enough number of trials](https://www.cambridge.org/core/journals/advances-in-applied-probability/article/convergence-and-finitetime-behavior-of-simulated-annealing/E71F662ACA634FE249EF6AD542B93739). Therefore, specifying a suitable number of steps for which to run the optimization is vital to ensure convergence.
 
 *Example:*
 
